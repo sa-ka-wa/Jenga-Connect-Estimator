@@ -8,12 +8,21 @@
   background-color: 30%;
   gap: 20px;
 }
+#navLogo {
+  color: #070504ff;
+}
 #navBar {
   display: flex;
   gap: 20px;
   color: #32180fff;
 }
+#navBar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
 #navBar a {
   color: #32180fff;
   font-size: x-large;
+  text-decoration: none;
 }
