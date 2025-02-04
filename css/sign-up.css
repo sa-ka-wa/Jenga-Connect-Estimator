@@ -30,7 +30,9 @@ body {
 }
 #navBar ul {
   display: flex;
+  list-style: none;
   flex-direction: row;
+  justify-content: space-between;
   gap: 110px;
 }
 #navBar a {
