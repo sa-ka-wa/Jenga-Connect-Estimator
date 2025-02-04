@@ -1,11 +1,19 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  background: #e1d7d5ff;
+}
+
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background-color: #7b6e59ff;
-  background-color: 30%;
+  background-color: #7b6e5980;
   gap: 20px;
 }
 #navLogo {
@@ -25,4 +33,24 @@
   color: #32180fff;
   font-size: x-large;
   text-decoration: none;
+}
+.main {
+  min-height: 100%;
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: relative;
+  padding: 20px;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #7b6e5980;
+  gap: 20px;
+}
+.footerIns {
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
