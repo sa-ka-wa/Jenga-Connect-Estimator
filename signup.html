@@ -7,6 +7,8 @@
     <title>sign up</title>
   </head>
   <body>
+    <!-- navigation Bar -->
+
     <header>
       <nav class="navigation">
         <div id="navLogo">
@@ -26,49 +28,78 @@
       </nav>
     </header>
 
-    <main action="">
-      <div>
-        <label for="fullName-input">fullName</label>
-        <input
-          type="text"
-          name="fullName"
-          id="fullName-input"
-          placeholder="CLARK KENT DOE"
-        />
+    <!-- main content  -->
+
+    <main class="main">
+      <div id="content">
+        <form action="">
+          <h2>Sign Up</h2>
+          <div>
+            <label for="fullName-input">
+              <img
+                src="./icons/person_24dp_E8EAED_FILL1_wght400_GRAD0_opsz24.svg"
+                width="60px"
+                alt=""
+              />
+            </label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName-input"
+              placeholder="CLARK KENT DOE"
+            />
+          </div>
+          <div>
+            <label for="email-input">email adress</label>
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="clarkkent123@gmail.com"
+            />
+          </div>
+          <div>
+            <label for="password-input">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password-input"
+              placeholder="1@Clark890"
+            />
+          </div>
+          <div>
+            <label for="repeat-password-input">repeat-password</label>
+            <input
+              type="password"
+              name="repeat-password"
+              id="repeat-password-input"
+              placeholder="1@Clark890"
+            />
+            </div>
+            <button type="submit">sign up</button>
+          </div>
+        </form>
+      
+
+        <div id="backgroundImage">
+          <img
+            src="./images/pexels-marina-zvada-844583049-29486501(1).jpg"
+            alt=""
+            width="800px"
+            id="backgroundImage"
+          />
+        </div>
       </div>
-      <div>
-        <label for="email-input">email adress</label>
-        <input
-          type="email"
-          name="email"
-          id="email-input"
-          placeholder="clarkkent123@gmail.com"
-        />
-      </div>
-      <div>
-        <label for="password-input">password</label>
-        <input
-          type="password"
-          name="password"
-          id="password-input"
-          placeholder="1@Clark890"
-        />
-      </div>
-      <div>
-        <label for="repeat-password-input">repeat-password</label>
-        <input
-          type="password"
-          name="repeat-password"
-          id="repeat-password-input"
-          placeholder="1@Clark890"
-        />
-      </div>
-      <button type="submit">sign up</button>
     </main>
-    <script src="./js/sign-up.js"></script>
+
+    <!-- footer bar -->
+
     <footer class="footer">
-      <div>
+      <div class="footerIns">
         <ul>
+          <li>company</li>
+          <li>company</li>
+          <li>company</li>
           <li>company</li>
         </ul>
         <ul>
@@ -78,32 +109,40 @@
           <li>company</li>
         </ul>
       </div>
-      <div>
-        <p>&copy; 2025</p>
-        <a href="https://www.youtube.com/" target="_blank">
-          <img
-            src="./icons/youtube-168-svgrepo-com.svg"
-            alt="youtube"
-            width="50px"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/cypher.arch?igsh=aXlpeGlpZnF2bTZ0"
-          target="_blank"
-        >
-          <img
-            src="./icons/logo-instagram-svgrepo-com.svg"
-            alt="instagram"
-            width="50px"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/cypher.arch?igsh=aXlpeGlpZnF2bTZ0"
-          target="_blank"
-        >
-          <img src="./icons/icons8-x.svg" alt="twitter" width="50px" />
-        </a>
+      <div class="footerIcons">
+        <div id="footerCopy">
+          <p>&copy; 2025</p>
+        </div>
+        <div id="footerIcon">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img
+              src="./icons/youtube-168-svgrepo-com.svg"
+              alt="youtube"
+              width="50px"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/cypher.arch?igsh=aXlpeGlpZnF2bTZ0"
+            target="_blank"
+          >
+            <img
+              src="./icons/logo-instagram-svgrepo-com.svg"
+              alt="instagram"
+              width="50px"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/cypher.arch?igsh=aXlpeGlpZnF2bTZ0"
+            target="_blank"
+          >
+            <img src="./icons/icons8-x.svg" alt="twitter" width="50px" />
+          </a>
+        </div>
       </div>
     </footer>
+
+    <!-- java script -->
+
+    <script src="./js/sign-up.js"></script>
   </body>
 </html>
