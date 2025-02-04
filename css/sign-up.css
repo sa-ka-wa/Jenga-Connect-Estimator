@@ -7,8 +7,9 @@ body {
   background: #e1d7d5ff;
   z-index: -1;
 }
-
-/* navigation bar */
+/* ============================= */
+/*        navigation bar         */
+/* ============================= */
 
 .navigation {
   display: flex;
@@ -16,7 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background-color: #7b6e5980;
+  background-color: #7b6e5940;
   gap: 20px;
 }
 #navLogo {
@@ -25,20 +26,21 @@ body {
 #navBar {
   display: flex;
   gap: 20px;
-  color: #32180fff;
+  color: #e1d7d5ff;
 }
 #navBar ul {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 110px;
 }
 #navBar a {
-  color: #32180fff;
-  font-size: x-large;
+  color: #e1d7d5ff;
+  font-size: xx-large;
   text-decoration: none;
 }
-
-/* main contant container */
+/* ============================= */
+/*    main content container     */
+/* ============================= */
 
 .main {
   height: 100vh;
@@ -49,8 +51,41 @@ body {
   justify-content: space-between;
   margin-top: 0px;
 }
-.content {
-  flex: 1;
+#content {
+}
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 70vh;
+  width: max(50%, 600px);
+  padding: 5px;
+  gap: 40px;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: xx-large;
+}
+#form > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#form > div > label {
+  width: 50px;
+  height: 50px;
+  background-color: #32180fff;
+  fill: #070504ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form > div > input {
+  width: 400px;
+}
+#fullName #email-input #password-input #repeat-password-input {
 }
 
 #backgroundImage {
@@ -58,7 +93,7 @@ body {
   height: 130vh;
   width: auto;
   background-size: contain;
-  background-position: center center;
+  background-position: right;
   margin-top: -130px;
   padding-right: 0;
   justify-items: right;
@@ -66,7 +101,9 @@ body {
   z-index: -1;
 }
 
-/* footer bar */
+/* ============================= */
+/*        footer                 */
+/* ============================= */
 
 .footer {
   position: relative;
