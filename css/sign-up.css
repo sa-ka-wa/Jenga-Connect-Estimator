@@ -51,8 +51,7 @@ body {
   justify-content: space-between;
   margin-top: 0px;
 }
-#content {
-}
+
 #form {
   display: flex;
   justify-content: center;
@@ -62,11 +61,13 @@ body {
   height: 70vh;
   width: max(50%, 600px);
   padding: 5px;
-  gap: 40px;
+  gap: 10px;
 }
 h2 {
   text-transform: uppercase;
   font-size: xx-large;
+  font-weight: 300;
+  text-shadow: #32180fff;
 }
 #form > div {
   width: 100%;
@@ -81,11 +82,36 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px 0px 0px 20px;
 }
 #form > div > input {
-  width: 400px;
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 500px;
+  padding: 1em;
+  border-radius: 0px 20px 20px 0px;
+  border: 2px;
+  color: #e1d7d5ff;
 }
-#fullName #email-input #password-input #repeat-password-input {
+
+#form > div > input:focus {
+  outline: none;
+  background-color: #32180fff;
+}
+#form > div:has(input:focus) > label {
+  background-color: #070504ff;
+}
+
+#form > button {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: large;
+  border: none;
+  border-radius: 100px;
+  color: #e1d7d5ff;
+  background-color: #32180fff;
+  cursor: pointer;
 }
 
 #backgroundImage {
