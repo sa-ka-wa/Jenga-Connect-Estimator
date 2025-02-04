@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #7b6e59ff;
+  background-color: 30%;
+  gap: 20px;
+}
+#navBar {
+  display: flex;
+  gap: 20px;
+  color: #32180fff;
+}
+#navBar a {
+  color: #32180fff;
+  font-size: x-large;
+}
