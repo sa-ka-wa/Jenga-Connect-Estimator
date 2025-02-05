@@ -129,6 +129,9 @@ h2 {
   z-index: -1;
   overflow: hidden;
 }
+.error {
+  color: red;
+}
 
 /* ============================= */
 /*        footer                 */
