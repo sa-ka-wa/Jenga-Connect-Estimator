@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //   fullNameError.innerText = "";
 
-  //   clearErrors();
-
   let errors = SignUpError(fullName, email, contacts, password, repeatPassword);
 
   if (errors.length > 0) {
@@ -31,22 +29,22 @@ document.addEventListener("DOMContentLoaded", function () {
   function SignUpError(fullName, email, contacts, password, repeatPassword) {
     let error = [];
     if (fullName.value.trim() === "") {
-      console.log("Error!!!");
+      console.log("full names Error!!!");
       error.push("full names required");
       showError(fullName, "full names required");
     }
     if (email.value.trim() === "") {
-      console.log("Error!!!");
+      console.log("email Error!!!");
       error.push("email required");
       showError(email, "email required");
     }
     if (contacts.value.trim() === "") {
-      console.log("Error!!!");
+      console.log("contacts Error!!!");
       error.push("contacts required");
       showError(contacts, "contacts required");
     }
     if (password.value.trim() === "") {
-      console.log("Error!!!");
+      console.log("password Error!!!");
       error.push("password required");
       showError(password, "password required");
     }
@@ -57,4 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
     errorDiv.textContent = message;
     element.classList.add("incorrect");
   }
+
+  function clearErrors() {
+    document.querySelectorAll(".error").forEach((el) => (el.textContent = ""));
+    document
+      .querySelectorAll(".error")
+      .forEach((el) => el.classList.remove("incorrect"));
+  }
+  clearErrors();
+
+  const allinputs = [fullName, email, contacts, password, repeatPassword];
+  allinputs.addEventListener(input, () => {
+    if (input.parentElement.classList.contains("incorrect")) {
+      input.parentElement.classList.remove("incorrect");
+    }
+  });
 });
