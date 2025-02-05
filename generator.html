@@ -36,73 +36,89 @@
     
     <main class="main">
       <div id="content">
-         <!--        Type Of Building             -->
+        <div class="topHalf"></div>
+          <!--        Type Of Building             -->
 
-        <form class="TypeOfBuilding"></form>
-          <h3>Type Of Building</h3>
-          <div>
-            <label for="residential">
-              <input type="radio" id="residential" name="gender" value="1" />
-              <span>Residential</span>
-            </label>
-          </div>
+          <form class="TypeOfBuilding"></form>
+            <h3>Type Of Building</h3>
+            <div>
+              <label for="residential">
+                <input type="radio" id="residential" name="gender" value="1" />
+                <span>Residential</span>
+              </label>
+            </div>
+            
+            <div>
+              <label for="commercial">
+                <input type="radio" id="commercial" name="gender" value="1" />
+                <span>Commercial</span>
+              </label>
+            </div>
+
+            <div>
+              <label for="industrial">
+                <input type="radio" id="industrial" name="gender" value="1" />
+                <span>Industrial</span>
+              </label>
+            </div>
+          </form>
           
-          <div>
-            <label for="commercial">
-              <input type="radio" id="commercial" name="gender" value="1" />
-              <span>Commercial</span>
-            </label>
+          <!--        material             -->
+          <div class="material">
+            <h3>Materials</h3>
+            <div class="materialSelection">
+              <label>Foundation Type
+                <select id="foundation-type">
+                  <option value="concrete">Concrete Slab</option>
+                  <option value="basement">Full Basement</option>
+                  <option value="crawl">Crawl Space</option>
+                </select>
+              </label>
+              <label>Location
+                <select id="location">
+                  <option value="urban">Urban</option>
+                  <option value="subUrban">Sub Urban</option>
+                  <option value="rural">Rural</option>
+                </select>
+              </label>
+              <label>floors
+                <input type="number" id="floor" min="1" />
+              </label>
+              <label>Roof type
+                <select id="roof-type">
+                  <option value="Flat">Flat Roof</option>
+                  <option value="gableRoof">Gable Roof</option>
+                  <option value="mansardRoof">Mansard Roof</option>
+                </select>
+              </label>
+              <label>Interior Design
+                <select id="interiorDesign">
+                  <option value="minimalist">Minimalist</option>
+                  <option value="industrial">Industrial</option>
+                  <option value="bohemian">Bohemian</option>
+                </select>
+              </label>
+              <label>Exterior Design
+                <select id="exteriorDesign">
+                  <option value="cottage">Cottage</option>
+                  <option value="ranchStyle">Ranch Style</option>
+                  <option value="craftsman">Craftsman</option>
+                </select>
+              </label>
+            </div>
           </div>
 
-          <div>
-            <label for="industrial">
-              <input type="radio" id="industrial" name="gender" value="1" />
-              <span>Industrial</span>
-            </label>
-          </div>
-        </form>
-        <!--        material             -->
-        <div class="material">
-          <h3>Materials</h3>
-          <div class="materialSelection">
-            <label>Foundation Type
-              <select id="foundation-type">
-                <option value="concrete">Concrete Slab</option>
-                <option value="basement">Full Basement</option>
-                <option value="crawl">Crawl Space</option>
-              </select>
-            </label>
-            <label>Foundation Type
-              <select id="foundation-type">
-                <option value="concrete">Concrete Slab</option>
-                <option value="basement">Full Basement</option>
-                <option value="crawl">Crawl Space</option>
-              </select>
-            </label>
-            <label>Foundation Type
-              <select id="foundation-type">
-                <option value="concrete">Concrete Slab</option>
-                <option value="basement">Full Basement</option>
-                <option value="crawl">Crawl Space</option>
-              </select>
-            </label>
-            <label>Foundation Type
-              <select id="foundation-type">
-                <option value="concrete">Concrete Slab</option>
-                <option value="basement">Full Basement</option>
-                <option value="crawl">Crawl Space</option>
-              </select>
-            </label>
-          </div>
-          <div>
-            <button type="submit" class="calculate-btn">
-               Calculate Estimate
-            </button>
-          </div>
+          <div class="bottomHalf">
 
-          <div class="result">
-              <h3>Total Estimate</h3>
-              <span id="total" class="value">$0</span>
+            <div>
+              <h3>Building Area</h3>
+                <input type="number" id="buildingArea" min="1" />
+            </div>
+
+            <div class="result">
+                <h3>Total Estimate</h3>
+                <span id="total" class="value">$$$$$$$$</span>
+            </div>
           </div>
         </div>
 
