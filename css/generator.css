@@ -76,10 +76,10 @@ body {
 }
 .image {
   flex: 1;
+  overflow: hidden;
 }
 image > img {
-  object-fit: cover;
-  overflow: hidden;
+  border-radius: 20px;
 }
 
 .typeOfBuilding {
