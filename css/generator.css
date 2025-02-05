@@ -93,11 +93,36 @@ body {
   display: flex;
   flex-direction: row;
   text-align: center;
+  gap: 20px;
+}
+.typeOfBuilding > div > label > svg {
+  width: 50px;
+  height: 50px;
+  background-color: #32180fff;
+  fill: #070504ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.typeOfBuilding > div > label > input {
+  outline: none;
+  background-color: #32180fff;
+}
+.typeOfBuilding > div:has(input:focus) > label > svg {
+  background-color: #070504ff;
+  fill: #32180fff;
 }
 .materialSelection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+}
+.materialSelection > label {
+  background-color: #32180fff;
+  height: 25px;
+}
+.materialSelection div > label > select:has(section:focus) > label {
+  background-color: #070504ff;
 }
 .bottomHalf {
   display: flex;
@@ -114,7 +139,7 @@ body {
   border-radius: 20px;
 }
 .buildingArea > input {
-  background-color: #32180fff;
+  background-color: #e1d7d5ff;
 }
 .result {
   flex: 2;
@@ -124,6 +149,15 @@ body {
   border-radius: 20px;
 }
 .button {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  font-size: large;
+  border: none;
+  border-radius: 100px;
+  color: #e1d7d5ff;
+  background-color: #070504ff;
+  cursor: pointer;
 }
 
 /* ============================= */
