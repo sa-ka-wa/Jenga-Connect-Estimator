@@ -44,6 +44,81 @@ body {
 /* ============================= */
 /*    main content container     */
 /* ============================= */
+.main {
+  margin-top: 10vh;
+  margin-left: 50vh;
+  margin-right: 50vh;
+  margin-bottom: 10vh;
+  height: 100%;
+}
+.topHalf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: #32180fff;
+  background-image: url();
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 10;
+  height: 50vh;
+  margin-bottom: 1vh;
+}
+.image {
+  flex: 1;
+  overflow: hidden;
+}
+image > img {
+  border-radius: 20px;
+}
+
+.typeOfBuilding {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.materialSelection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.bottomHalf {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+.buildingArea {
+  flex: 1;
+  background-color: #32180fff;
+  padding: 20px;
+  width: 20%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.buildingArea > input {
+  background-color: #32180fff;
+}
+.result {
+  flex: 2;
+  background-color: #32180fff;
+  flex-direction: row;
+  width: 80%;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
 /* ============================= */
 /*        footer                 */
