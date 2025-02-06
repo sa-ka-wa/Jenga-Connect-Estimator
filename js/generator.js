@@ -98,12 +98,17 @@ document.addEventListener("DOMContentLoaded", function () {
       );
 
       console.log(totalCost);
+
+      if (totalElement) {
+        totalElement.textContent = `KES ${totalCost.toLocaleString()}`;
+      } else {
+        console.log("Total element not found!");
+      }
+
       function showError(element, message) {
         const errorDiv = element.parentElement.querySelector(".total");
         errorDiv.textContent = message;
         element.classList.add("incorrect");
-
-        totalElement.textContent = `KES ${totalCost.toLocaleString()}`;
       }
     });
 });
