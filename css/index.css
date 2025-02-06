@@ -40,6 +40,7 @@ body {
   color: #e1d7d5ff;
   font-size: xx-large;
   text-decoration: none;
+  text-shadow: 2px 0px 0px #070504ff;
 }
 /* ============================= */
 /*    main content container     */
@@ -58,7 +59,7 @@ body {
 }
 .intro-paragraph {
   color: #7b6e59ff;
-  outline: #070504ff;
+  text-shadow: 2px 0px 0px #070504ff;
   font-size: x-large;
   z-index: 10;
   width: 50%;
