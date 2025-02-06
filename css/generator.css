@@ -112,6 +112,10 @@ body {
   background-color: #070504ff;
   fill: #32180fff;
 }
+.material {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 .materialSelection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -119,7 +123,9 @@ body {
 }
 .materialSelection > label {
   background-color: #32180fff;
-  height: 25px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .materialSelection div > label > select:has(section:focus) > label {
   background-color: #070504ff;
