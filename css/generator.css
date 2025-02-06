@@ -52,6 +52,7 @@ body {
   margin-bottom: 10vh;
   min-width: 50%;
   color: #e1d7d5ff;
+  text-shadow: 2px 0px 0px #070504ff;
   height: 100%;
 }
 .topHalf {
