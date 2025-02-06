@@ -50,6 +50,7 @@ body {
   margin-right: auto;
   margin-bottom: 10vh;
   min-width: 50%;
+  color: #e1d7d5ff;
   height: 100%;
 }
 .topHalf {
@@ -110,7 +111,7 @@ body {
 }
 .typeOfBuilding > div:has(input:focus) > label > svg {
   background-color: #070504ff;
-  fill: #32180fff;
+  fill: #e1d7d5ff;
 }
 .material {
   max-width: 100%;
@@ -127,8 +128,9 @@ body {
   margin-left: 10px;
   margin-right: 10px;
 }
-.materialSelection div > label > select:has(section:focus) > label {
+.materialSelection div > label:has(section:focus) > label {
   background-color: #070504ff;
+  color: #070504ff;
 }
 .bottomHalf {
   display: flex;
