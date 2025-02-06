@@ -101,6 +101,12 @@ body {
 .portfolio > img {
   width: auto;
   height: 250px;
+  border: #070504ff;
+  border-radius: 10px;
+  box-shadow: 4px 7px 7px 0px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
 }
 /* ============================= */
 /*        footer                 */
