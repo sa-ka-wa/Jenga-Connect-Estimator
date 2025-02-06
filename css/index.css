@@ -46,17 +46,19 @@ body {
 /* ============================= */
 .main {
   margin-bottom: 150px;
+  width: 100vw;
 }
 .heading {
-  color: yellow;
+  color: #32180fff;
   font-size: 60px;
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 2px 2px 0 #070504ff;
   font-family: "Times New Roman", Times, serif;
   z-index: 10;
   margin-left: 200px;
 }
 .intro-paragraph {
-  color: white;
+  color: #7b6e59ff;
+  outline: #070504ff;
   font-size: x-large;
   z-index: 10;
   width: 50%;
@@ -107,6 +109,10 @@ body {
   cursor: pointer;
   margin: 10px;
   transition: 400ms;
+}
+.portfolio > img:hover {
+  filter: grayscale(1);
+  transform: scale(1.03);
 }
 /* ============================= */
 /*        footer                 */
