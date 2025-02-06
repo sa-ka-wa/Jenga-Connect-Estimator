@@ -19,6 +19,7 @@ body {
   padding: 15px 50px;
   background-color: #7b6e5940;
   gap: 20px;
+  z-index: 10;
 }
 #navLogo {
   color: #070504ff;
@@ -43,7 +44,64 @@ body {
 /* ============================= */
 /*    main content container     */
 /* ============================= */
-
+.main {
+  margin-bottom: 150px;
+}
+.heading {
+  color: yellow;
+  font-size: 60px;
+  text-shadow: 2px 2px 0 black;
+  font-family: "Times New Roman", Times, serif;
+  z-index: 10;
+  margin-left: 200px;
+}
+.intro-paragraph {
+  color: white;
+  font-size: x-large;
+  z-index: 10;
+  width: 50%;
+  margin-right: 50px;
+}
+.background {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: -500px;
+  z-index: -1;
+  float: left;
+  width: 50%;
+  height: 10vh;
+  object-fit: cover;
+}
+#intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 50vh;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.description {
+  background-size: cover;
+  background-position: center;
+}
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 50px;
+}
+.portfolio > img {
+  width: auto;
+  height: 250px;
+}
 /* ============================= */
 /*        footer                 */
 /* ============================= */
